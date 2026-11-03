@@ -1,150 +1,246 @@
-# 🚀 InnoVision 2026 — NIT Rourkela Official Website
-
 <div align="center">
 
-<img src="./public/assets/nitr_logo.png" alt="NIT Rourkela Logo" width="130" height="130" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="./public/assets/INNOVISION%20LOGO.png" alt="Innovision Logo" width="140" />
+<img src="./public/assets/nitr_official_logo.png" alt="National Institute of Technology Rourkela" width="160" />
 
-### **The Annual Techno-Management Fest of National Institute of Technology, Rourkela**
-*Eastern India's Largest Techno-Management Extravaganza*
+# INNOVISION 2026
+### NATIONAL INSTITUTE OF TECHNOLOGY, ROURKELA
+#### Flagship Annual Techno-Management Fest & Autonomous Space-Themed Interface Engine
 
-🌐 **Live Website:** [https://www.innonitrkl.com/](https://www.innonitrkl.com/)  
-📍 **Hosted By:** National Institute of Technology, Rourkela (NITR)
+[![Production Status](https://img.shields.io/badge/PRODUCTION-DEPLOYED-00ffaa?style=for-the-badge&logo=vercel&logoColor=black&labelColor=0d1117)](https://www.innonitrkl.com/)
+[![NIT Rourkela](https://img.shields.io/badge/AFFILIATION-NIT%20ROURKELA-ffaa00?style=for-the-badge&labelColor=0d1117)](https://www.nitrkl.ac.in/)
+[![Runtime Engine](https://img.shields.io/badge/RUNTIME-NODE.JS%20v18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white&labelColor=0d1117)](https://nodejs.org/)
+[![Graphics Core](https://img.shields.io/badge/RENDERER-THREE.JS%20%7C%20WEBGL%202.0-007acc?style=for-the-badge&logo=three.js&logoColor=white&labelColor=0d1117)](https://threejs.org/)
+[![Application Pipeline](https://img.shields.io/badge/FRAMEWORK-NEXT.JS%20APP%20ROUTER-black?style=for-the-badge&logo=next.js&logoColor=white&labelColor=0d1117)](https://nextjs.org/)
 
----
-
-[![Node.js Version](https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![Express.js](https://img.shields.io/badge/Express.js-4.21-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-[![WebGL / Three.js](https://img.shields.io/badge/Three.js-r185-black?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
-[![Live Status](https://img.shields.io/badge/Deployment-Live-success?style=for-the-badge&logo=vercel)](https://www.innonitrkl.com/)
+**Production Endpoint:** [https://www.innonitrkl.com/](https://www.innonitrkl.com/)  
+**Parent Institution:** National Institute of Technology, Rourkela (Institute of National Importance under Ministry of Education, Govt. of India)
 
 </div>
 
 ---
 
-## 📖 Overview & Web Description
+## 01. EXECUTIVE ARCHITECTURAL SUMMARY
 
-**InnoVision** is the premier annual flagship techno-management fest organized by the student community at the **National Institute of Technology, Rourkela**. Serving as a crucible for technology enthusiasts, coders, roboticists, innovators, and future entrepreneurs across India, InnoVision brings together thousands of participants for high-stakes hackathons, design sprints, paper presentations, exhibitions, pro-shows, and futuristic interactive gaming arenas.
+The official web platform for **InnoVision 2026 (NIT Rourkela)** implements an asymmetric distributed web-engine engineered for zero-latency event orchestration, high-concurrency client navigation, and hardware-accelerated volumetric 3D scene synthesis. 
 
-This repository hosts the full implementation of the official **InnoVision 2026** platform accessible at [**https://www.innonitrkl.com/**](https://www.innonitrkl.com/). The experience features an immersive space-themed user interface, real-time 3D celestial animations, custom dynamic sound synthesis, seamless Single Page Application (SPA) navigation, complete event schedules, official merchandise portal, campus ambassador onboarding, and interactive ticketing passes.
+Serving as the digital command center for Eastern India's largest annual techno-management convention, the system integrates a deterministic client-side Single Page Application (SPA) state machine, real-time procedural WebGL rasterization, synthesized low-latency audio telemetry via the Web Audio API, and a custom Node.js Express edge gateway delivering React Server Component (RSC) payload streams with static fallbacks.
 
 ---
 
-## 🏛️ System Architecture
-
-The project architecture combines high-performance client-side rendering with an expressive micro-service distribution model:
+## 02. FULL-SCALE ENTERPRISE SYSTEM ARCHITECTURE
 
 ```mermaid
-flowchart TD
-    subgraph Client["Client Browser / User Layer"]
-        UI["React & Vanilla UI Components"]
-        WebGL["Three.js 3D Cosmic Canvas (Planets, Asteroids, Orbiters)"]
-        Audio["Web Audio API & Synthesizer (Interactive SFX)"]
-        Router["Client Hash Router (#/worlds, #/schedule, #/gallery)"]
+flowchart TB
+    %% CLIENT VIEWPORT TIER
+    subgraph ClientCluster["CLIENT BROWSER LAYER (HARDWARE-ACCELERATED)"]
+        direction TB
+        subgraph ViewportEngine["Graphics & Presentation Core"]
+            ThreeEngine["Three.js WebGL 2.0 Renderer\n- Orthographic & Perspective Viewports\n- Procedural Starfield & Raymarching\n- Instanced Planetary Meshes\n- Real-Time Orbit Controls & Raycasting"]
+            GSAPCore["GSAP Animation Pipeline\n- Inertial ScrollTrigger Engine\n- Element Transforms & Pinning\n- Micro-Interaction Springs"]
+        end
+
+        subgraph ClientRuntime["Client Application Runtime"]
+            SPARouter["Client-Side Hash State Machine\n(#/worlds, #/schedule, #/gallery, #/ambassador)"]
+            ReactUI["React 19 / Hybrid Hydration DOM\n- Event Cards & Dynamic Filtering\n- 3D Tilt Matrix Transforms\n- HUD Status Gauges"]
+            AudioSynth["Web Audio Synthesizer\n- AudioContext & BiquadFilters\n- Parametric Impulse Oscillator\n- Zero-Asset Telemetry Sound Generation"]
+        end
     end
 
-    subgraph CDN["Static Asset Delivery & Storage Layer"]
-        Assets["Vector SVGs, Planetary WebPs, GLTF Models"]
-        ImageKit["ImageKit Cloud CDN (Dynamic Posters, Merch, Archives)"]
+    %% CONTENT DELIVERY & CDN LAYER
+    subgraph DeliveryTier["DISTRIBUTION & EDGE NETWORK TIER"]
+        direction LR
+        EdgeDNS["Cloudflare Edge Anycast DNS\n- Geo-Routing & DDoS Mitigation\n- TLS 1.3 Termination"]
+        ImageKitCDN["ImageKit Global Media Delivery\n- Dynamic WebP Transformations\n- DPR Responsive Poster Sizing\n- Cloud Asset Offloading"]
     end
 
-    subgraph Server["Runtime & Application Server Layer"]
-        Express["Express.js Reverse-Routing Server (Node.js)"]
-        StaticMiddleware["Static Asset Pipeline & Caching Header Engine"]
-        APIEngine["Mock API Provider (/api/events, /api/gallery)"]
+    %% APPLICATION SERVER & REVERSE PROXY LAYER
+    subgraph ServerCluster["RUNTIME APPLICATION SERVER (NODE.JS EXPRESS)"]
+        direction TB
+        ReverseProxy["Express.js Reverse Router\n- Strict MIME Enforcement\n- Route Normalization Engine\n- CORS Whitelist Protection"]
+        RSCInterceptor["Next.js Flight RSC Parser\n- Header Interception (rsc=1, _rsc)\n- Static Payload Demuxer"]
+        APIGateway["Internal Micro-APIs\n- /api/events (Data Store Pipe)\n- /api/gallery (Chronology Pipe)"]
+        StaticFS["Static Asset Pipeline\n- Public Static Chunk Caches\n- ETag & Byte-Range Steaming"]
     end
 
-    subgraph External["Official Host Infrastructure"]
-        Host["Production Domain: https://www.innonitrkl.com/"]
-        NITR["NIT Rourkela Central Computing & Network Infrastructure"]
+    %% INFRASTRUCTURE & BACKEND CLUSTER
+    subgraph EnterpriseBackbone["DATA & INFRASTRUCTURE TIER"]
+        direction LR
+        ProductionCluster["Vercel Edge Computing Network\n(Production Deployment Cluster)"]
+        NITRNetwork["NIT Rourkela Central Computing Network\n(Identity & On-Campus Systems)"]
     end
 
-    UI --> Router
-    UI --> WebGL
-    UI --> Audio
-    Router --> StaticMiddleware
-    StaticMiddleware --> Express
-    Express --> APIEngine
-    Express --> Assets
-    Assets -.-> ImageKit
-    Server --> Host
-    NITR -.-> Host
+    %% CONNECTIONS
+    EdgeDNS --> ReverseProxy
+    ClientCluster <==> EdgeDNS
+    ReverseProxy --> RSCInterceptor
+    RSCInterceptor --> SPARouter
+    RSCInterceptor --> StaticFS
+    ReverseProxy --> APIGateway
+    ViewportEngine -.-> ImageKitCDN
+    ServerCluster <==> ProductionCluster
+    ProductionCluster -.-> NITRNetwork
 ```
 
-### Architectural Highlights
-1. **Interactive Cosmic Viewport**: Hardware-accelerated 3D environment powered by Three.js rendering procedural starfields, realistic orbital rotation, interactive solar systems, and interactive spacecraft dynamics.
-2. **Audio Reactive Interface**: Custom synthesized sound effects leveraging the browser's `Web Audio API` (`AudioContext` and `OfflineAudioContext`) coupled with procedural sound generation for haptic feedback on navigation.
-3. **Decoupled Asset Distribution**: Heavy media assets, event banners, and merchandise previews are pre-optimized in WebP format and synchronized with ImageKit CDN caching.
-4. **Resilient Routing & Fallbacks**: Fully static SPA routing with hash-based views (`#/worlds/*`, `#/schedule`, `#/gallery`, `#/ambassador`), ensuring zero 404s on direct reloads and edge proxy serving.
+---
+
+## 03. COMPONENT & PROTOCOL SPECIFICATIONS
+
+### A. WebGL 2.0 Real-Time Space Engine
+- **Engine Core:** Three.js `r185` compiled via Webpack dynamic chunking with tree-shaken geometric buffers.
+- **Volumetric Space Environment:** 
+  - Dynamic starfields calculated procedurally via vertex-buffered point clouds (`BufferGeometry`).
+  - Physically based custom lighting models utilizing ambient illumination, point spotlights, and emissive material multipliers.
+  - Interactive celestial bodies including high-resolution planetary meshes (Earth, Mars, Mercury, crescent and storm variants) mapped to customized rotation and orbital vector velocities.
+  - Interactive Raycaster tracking pointer coordinates mapped to normal projection screens with matrix lerping for 60 FPS transitions.
+
+### B. Audio Synthesis & Telemetry System
+- **Synthesizer Core:** Native Web Audio API (`AudioContext`, `OfflineAudioContext`).
+- **Telemetry Beep Synthesizer:** High-frequency sinusoidal oscillations routed through a `GainNode` with logarithmic volume decay curves, eliminating audio asset payload latency.
+- **Audio Feedback Integration:** Synchronized trigger events attached to client navigation, schedule shifts, and button interactions.
+
+### C. Server Architecture & RSC Flight Routing
+- **Reverse Routing Gateway:** Express.js 4.21 runtime providing full route handling for dynamic Next.js App Router exports.
+- **Flight Request Detection:** Custom middleware interrogates incoming request headers for `RSC: 1` or query parameter `_rsc` to dynamically serve `.rsc` payload serialization blocks or standard `.html` hydration roots.
+- **MIME & Byte Streaming:** Static assets, fonts (`.woff2`), scripts, and image formats (`.webp`, `.png`, `.svg`) are served with cache-control immutability and byte-range partition headers.
 
 ---
 
-## 🪐 Key Features & Modules
+## 04. DIRECTORY & REPOSITORY TOPOLOGY
 
-- **🌌 3D Space Horizon**: Real-time rendering of cosmic bodies (Earth, Mars, Mercury, Ringed Planets, Asteroids) and interactive astronauts.
-- **🏆 Event Ecosystem**:
-  - `Flagship Events`: National-level Hackathons, Robotics, and AI Arenas.
-  - `Standout Events`: Premier engineering contests and innovation showcases.
-  - `Main Events`: Domain-specific coding, circuit design, and gaming battles.
-  - `DTS & Fun Events`: Informals, quizzes, stargazing, and cultural nights.
-- **📅 Interactive Schedule**: 3D interactive card tilts for Day 1, Day 2, and Day 3 venue timetables with category filters.
-- **🖼️ 3D Gallery & Archives**: Interactive memory wall showcasing past festival editions and historical highlights.
-- **👕 Official Merch Store**: Interactive 3D apparel showcase featuring hoodies, tees, and zippers with real-time color swatches.
-- **🎟️ Registration HUD**: Interactive registration passes with live seat counter tracking and dynamic verification.
-- **🤝 Campus Ambassador Portal**: Referral management dialog with live code authentication and incentives dashboard.
+```
+D:\NITR
+|-- .gitignore                      # Git configuration & ignore matrix
+|-- package.json                    # Node runtime dependency manifest
+|-- package-lock.json               # Deterministic dependency lockfile
+|-- server.js                       # Express.js reverse router & server engine
+|-- start.bat                       # Win32 automation launch sequence
+|-- run.ps1                         # PowerShell pipeline execution script
+|-- README.md                       # Enterprise technical documentation
+|
+|-- public/                         # Public production asset root
+|   |-- index.html                  # Core application entrypoint & DOM root
+|   |-- index.rsc                   # Next.js App Router Root Flight chunk
+|   |-- merch.html                  # Merchandise module viewport
+|   |-- privacy.html                # Compliance & privacy framework
+|   |-- terms.html                  # Institutional terms & conditions
+|   |-- robots.txt                  # Search crawler directives
+|   |-- sitemap.xml                 # Canonical XML indexing tree
+|   |
+|   |-- _next/                      # Compiled Next.js production builds
+|   |   `-- static/                 # Versioned Webpack JavaScript chunks & CSS
+|   |       |-- chunks/             # Code-split dynamic route modules
+|   |       |-- css/                # Minified responsive style trees
+|   |       `-- media/              # Sub-subsetted WOFF2 font binaries
+|   |
+|   |-- assets/                     # Core visual assets & institutional insignia
+|   |   |-- nitr_official_logo.png  # High-resolution official NIT Rourkela seal
+|   |   |-- INNOVISION LOGO.png     # Official InnoVision festival insignia
+|   |   |-- starfield.svg           # High-density vector star map
+|   |   |-- rocket.svg              # Mission profile SVG
+|   |   |-- payment-qr.webp         # Direct merchant payment QR buffer
+|   |   `-- *.webp                  # Compressed planetary & astronaut geometries
+|   |
+|   |-- events/                     # World event categorization payloads
+|   |   |-- flagship-events.*       # Tier 1 Competitions (Hackathons, AI, Robotics)
+|   |   |-- standout-events.*       # Tier 2 Engineering Showcases
+|   |   |-- main-events.*           # Domain coding, circuit & gaming arenas
+|   |   `-- dts-and-fun-events.*    # Informal challenges & cultural events
+|   |
+|   |-- api/                        # Mock data services
+|   |   |-- events.json             # Consolidated event schedules & rules
+|   |   `-- gallery.json            # Historical archives & media pointers
+|   |
+|   `-- imagekit/                   # Cached ImageKit CDN static proxies
+|       |-- b4kmkfgaod/             # Historical posters & sponsor registries
+|       `-- zr1vkuqit/              # Official festival merchandise assets
+|
+`-- tools/                          # Administrative inspection & scraping tooling
+    |-- crawl_pages.py              # Autonomous multi-route validation crawler
+    |-- download_all_assets.py      # Automated asset synchronization agent
+    |-- extract_all_media.py        # Webpack bundle media analyzer
+    `-- inspect_api.py              # Endpoint schema regression test suite
+```
 
 ---
 
-## 💻 Tech Stack
+## 05. ROUTE MAP & APPLICATION STATE MATRIX
 
-- **Runtime:** Node.js (v18.x / v20.x / v22.x)
-- **Backend:** Express.js (`server.js`)
-- **3D Graphics & Animation:** Three.js (r185), WebGL 2.0, GSAP, ScrollTrigger
-- **Audio Engine:** Web Audio API (`AudioContext`, `BiquadFilterNode`, `GainNode`)
-- **Styling:** Modern CSS3, Sora & Space Grotesk Typography, Cyberpunk Glassmorphism
-- **Asset Pipeline:** Next.js Static Export, ImageKit WebP optimization
+| Route Path | Type | Target Payload | Primary Subsystems |
+| :--- | :--- | :--- | :--- |
+| `#/` | Client Hash SPA | `index.html` + `index.rsc` | Three.js Solar Horizon, Hero HUD, Orbit Selectors |
+| `#/worlds/flagship-events` | Client Hash SPA | `events/flagship-events.html` | Flagship Event Grid, Modal Rulebooks, Registration Link |
+| `#/worlds/standout-events` | Client Hash SPA | `events/standout-events.html` | Standout Challenge Display, Team Matrix, Rules |
+| `#/worlds/main-events` | Client Hash SPA | `events/main-events.html` | Departmental Challenges, Technical Contests |
+| `#/worlds/dts-and-fun-events` | Client Hash SPA | `events/dts-and-fun-events.html` | Informals, Stargazing, Quizzes, E-Sports Arena |
+| `#/schedule` | Client Overlay | Dynamic JSON (`/api/events`) | 3D Interactive Tilt Cards, Venue Filter, Day 1-3 Matrix |
+| `#/gallery` | Client Overlay | Dynamic JSON (`/api/gallery`)| 3D Retrospective Memory Wall, Chronological Timeline |
+| `#/ambassador` | Client Dialog | Client State Handler | Referral Code Validator, Live Point Calculator |
+| `/merch` | Static Page | `merch.html` + `merch.rsc` | 3D Apparel Customizer, Color Palette Selector |
+| `/privacy` | Static Document | `privacy.html` | Institutional Compliance, Data Protection Policy |
+| `/terms` | Static Document | `terms.html` | Event Participation Guidelines & Safety Norms |
 
 ---
 
-## 🚀 Local Development Setup
+## 06. DEPLOYMENT & LOCAL EXECUTION PIPELINE
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (version 18 or higher recommended)
-- `npm` or `yarn`
+- Node.js LTS (Version 18.x, 20.x, or 22.x)
+- Native Shell (PowerShell 7+, Windows Terminal, or POSIX bash)
+- Port availability: `3000` (Default, reconfigurable via environment variables)
 
-### Installation & Run
+### Automated Initialization Sequence
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Aniket-Das-2006/InnoVision26--NITR.git
-   cd InnoVision26--NITR
-   ```
+#### Option A: Native Command Line Execution
+```bash
+# Clone the verified repository
+git clone https://github.com/Aniket-Das-2006/InnoVision26--NITR.git
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+# Navigate into the deployment root
+cd InnoVision26--NITR
 
-3. **Start the server:**
-   ```bash
-   npm start
-   ```
-   *Windows users can also simply run `.\run.ps1` or double-click `start.bat`.*
+# Install dependencies (Express 4.x runtime)
+npm install
 
-4. **Access the application:**
-   Open your browser at `http://localhost:3000` (or `http://localhost:3000/#/`).
+# Start the reverse routing engine
+npm start
+```
+
+#### Option B: Windows Automation Script
+```powershell
+# Open terminal inside the repository folder and execute:
+.\run.ps1
+```
+*(Or double-click `start.bat` for automatic port resolution and default browser launch).*
+
+### Production Gateway Verification
+Once running, verify network socket status:
+```text
+[HTTP] Engine active on: http://localhost:3000
+[HTTP] Direct SPA hash: http://localhost:3000/#/
+[API]  Event registry:  http://localhost:3000/api/events
+[API]  Gallery stream:  http://localhost:3000/api/gallery
+```
 
 ---
 
-## 🌐 Official Links
+## 07. INSTITUTIONAL METRICS & CITATION
 
-* **Official Fest Website:** [https://www.innonitrkl.com/](https://www.innonitrkl.com/)
-* **Institute Website:** [https://www.nitrkl.ac.in/](https://www.nitrkl.ac.in/)
-* **GitHub Repository:** [https://github.com/Aniket-Das-2006/InnoVision26--NITR](https://github.com/Aniket-Das-2006/InnoVision26--NITR)
+```yaml
+Institution: National Institute of Technology, Rourkela
+Location: Rourkela, Sundargarh, Odisha, India - 769008
+Festival Name: InnoVision 2026
+Production Domain: https://www.innonitrkl.com/
+Repository: https://github.com/Aniket-Das-2006/InnoVision26--NITR
+Classification: Public Techno-Management Platform Architecture
+Engine Stack: Next.js App Router | Three.js WebGL 2.0 | Express.js Gateway
+```
 
 ---
 
 <div align="center">
-Crafted with passion for <b>InnoVision 2026</b> &bull; <b>National Institute of Technology, Rourkela</b>
+
+**National Institute of Technology, Rourkela**  
+*Established under the National Institutes of Technology Act, Government of India*  
+Official Festival Platform &bull; InnoVision 2026
+
 </div>
