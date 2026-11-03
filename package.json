@@ -1,0 +1,14 @@
+{
+  "name": "innovision-nitrkl-2026",
+  "version": "1.0.0",
+  "description": "Innovision NIT Rourkela 2026 Official Fest Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
+
