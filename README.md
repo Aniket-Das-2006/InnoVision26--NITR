@@ -15,6 +15,12 @@
 **Production Endpoint:** [https://www.innonitrkl.com/](https://www.innonitrkl.com/)  
 **Parent Institution:** National Institute of Technology, Rourkela (Institute of National Importance under Ministry of Education, Govt. of India)
 
+<br/>
+
+<p align="center">
+  <img src="./public/assets/activity_telemetry.svg" alt="Repository Telemetry Activity Velocity Graph" width="100%" />
+</p>
+
 </div>
 
 ---
